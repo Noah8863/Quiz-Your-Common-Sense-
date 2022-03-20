@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="quiz_stylesheet.css" rel= "stylesheet">
+    <title>Quiz Your Common Sense!</title>
+
+</head>
+<body>
+    <div id= "timer">
+        <p>Be prepared for confusion!</p>
+    </div>
+    <div class= "main-box">
+        <div id= "pregameText">
+            <p>Welcome to the Common Sense Quiz! Some questions may seem easy while other require you to think outside the box! Everytime you get a question correct, you will gain a point. However, if you miss a question, you'll have time taken away from you!</p>
+        </div>
+        <div id= "question-containter" class= "hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="button-grid">
+                <button class= "button"></button>
+                <button class= "button"></button>
+                <button class= "button"></button>
+                <button class= "button"></button>
+            </div>
+        </div>
+    <div class= "controls">
+        <button id= "start-button" class= "start-button btn">Start!</button>
+        <button id="next-button" class= "next-button btn hide">Next</button>
+        <button id= "restart-button">Restart the Game!</button>
+    </div>
+    <input id ='textBox' type="text" placeholder="Enter Your Initails Here!" onblur="getUserInitails()">
+</div>
+
+<div id= "score">
+    <h2></h2>
+</div>
+
+<script src="Quiz.js"></script>
+</body>
+</html>
